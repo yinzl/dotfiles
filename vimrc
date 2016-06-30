@@ -103,3 +103,4 @@ else
 	set background=dark
 endif
 colorscheme solarized
+"date 2016/6/30
