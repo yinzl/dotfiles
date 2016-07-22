@@ -6,7 +6,7 @@ export ZSH=/Users/zhaoliangyin/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME=random
-ZSH_THEME="pygmalion"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,7 +50,7 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git osx ruby web-search sublime rvm node npm bew common-aliases)
+plugins=(rails git osx ruby web-search sublime rvm node npm bew common-aliases virtualenv virtualenv-prompt)
 
 # User configuration
 
@@ -91,3 +91,13 @@ fi
 
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
+
+#alias for cnpm
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"
+
+export NODE_PATH="/Users/zhaoliangyin/.nvm/versions/node/v6.3.0/lib/node_modules"
+
+alias pc='proxychains4'

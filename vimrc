@@ -73,6 +73,8 @@ Bundle 'rdnetto/YCM-Generator'
 Bundle 'tpope/vim-surround'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
+
 
 call vundle#end()            
 filetype plugin indent on    
@@ -94,6 +96,10 @@ let g:UltiSnippetsEditSplit="vertical"
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"Emmet 
+"enable just for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 let g:solarized_termcolors=256
 if has('gui_running')
