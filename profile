@@ -1,12 +1,5 @@
 export PATH="/Users/zhaoliangyin/bin:/use/local/bin:$PATH"
-export EDITOR='subl -w'
-
-alias v="vim"
-alias sl="ls -alt"
-alias lt="ls -alt"
-alias webpack="webpack --progress --colors"
-alias webpackds="webpack-dev-server --progress --colors"
-
+export EDITOR='vim'
 
 # Mysql bin
 export PATH="/usr/local/mysql/bin:$PATH"
@@ -20,10 +13,10 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH="$ANDROID_HOME/bin:$PATH"
 
 #alias for cnpm(taobao.org) Nodejs Package Manager
-#alias cnpm="npm --registry=https://registry.npm.taobao.org \
-#  --cache=$HOME/.npm/.cache/cnpm \
-#  --disturl=https://npm.taobao.org/dist \
-#  --userconfig=$HOME/.cnpmrc"
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"
 
 
 # RVM - Ruby Version Manager
